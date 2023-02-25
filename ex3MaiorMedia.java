@@ -9,22 +9,21 @@ public class ex3MaiorMedia {
         int soma = 0;
         int count = 0;
 
-        do {
+        do { //--Fazer isso
+            
             System.out.println("Numero: ");
-            numero = scan.nextInt();
-
+            numero = scan.nextInt();//--guarda a entrada no usuario em 'numero'
             soma = soma + numero;
 
-            if (numero > maior)
+            if (numero > maior) //--regra para saber o maior numero digitado
                 maior = numero;
             count++;
 
-        } while (count < 5);
+        } while (count < 5); //--enquanto isso for verdade
 
         System.out.println("A Soma dos numeros: " + soma);
         System.out.println("O maior Numero foi o " + maior);
         System.out.println("O media foi " + (soma / count));
-
     }
 }
 /*
