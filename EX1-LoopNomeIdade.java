@@ -1,21 +1,22 @@
-import java.util.Scanner; //---importar biblioteca scanner
+import java.util.Scanner; //--Importar biblioteca scanner
+
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in); //--scanner para pegar entradas do usuario
+        Scanner scan = new Scanner(System.in); //--Scanner para pegar entradas do usuario
 
-        String nome;//-variavel nome
-        int idade;//-variavel idade
+        String nome;//--Variavel nome
+        int idade;//--Variavel idade
 
         while (true) {
             System.out.println("Nome: ");
-            nome = scan.next(); //--atribui a entrada do usuario a var nome
+            nome = scan.next(); //--Guarda a entrada do usuario em 'nome'
 
-            if (nome.equals("0") ) break; //--se o nome for =0 sair do laço
+            if (nome.equals("0") ) break; //--Parar o laço Se o nome for = 0
             System.out.println("Idade: ");
-            idade = scan.nextInt();//--atribui a entrada do usuario a var idade
+            idade = scan.nextInt();//--Guarda a entrada do usuario em 'idade'
 
             System.out.println(nome + " tem apenas " + idade +" anos");
         }
-        System.out.println("--SAIU DO LAÇO WHILE..."); //--exibe somente ao sair do laço
+        System.out.println("--SAIU DO LAÇO WHILE..."); //--Exibe somente ao sair do laço
     }
 }
