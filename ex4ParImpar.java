@@ -9,18 +9,18 @@ public class ex4ParImpar {
         int qtPares = 0, qtImpares = 0;
 
         System.out.println("Quantidade de numeros: ");
-        qtdNumeros = scan.nextInt();
+        qtdNumeros = scan.nextInt(); //--Guarda a entrada no usuario em 'qtdNumeros'
 
         int count = 0;
-        do{
+        do{ //--Faça isso
             System.out.println("Numero: ");
-            numero = scan.nextInt();
+            numero = scan.nextInt();  //--Guarda a entrada no usuario em 'numero'
 
-            if(numero % 2 == 0) qtPares++;
+            if(numero % 2 == 0) qtPares++; //--Regra para saber se um numero é par
             else qtImpares++;
-            count ++;
-            
-        }while(count < qtdNumeros);
+            count ++;//--Incrementa 1 após cada loop
+
+        }while(count < qtdNumeros); //--Enquanto isso for verdade
 
         System.out.println("Quantidade de Pares: " + qtPares);
         System.out.println("Quantidade de Impares: " + qtImpares);
