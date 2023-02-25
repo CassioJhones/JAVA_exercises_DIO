@@ -11,11 +11,11 @@ public class ex2LoopDio {
 
         int nota;
         System.out.println("Nota: ");
-        nota = scan.nextInt();
+        nota = scan.nextInt();//--guarda a entrada no usuario em 'nota'
 
-        while (nota < 0 || nota > 10) {
+        while (nota < 0 || nota > 10) { //--Se a nota for menor que zero ou maior que 10, entra no loop
             System.out.println("--NOTA INVÁLIDA, Digite Novamente--");
-            nota = scan.nextInt();
+            nota = scan.nextInt(); //--guarda a entrada no usuario em 'nota'
         }
     }
 }
